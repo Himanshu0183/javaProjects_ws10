@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.himanshu.clientapp.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="welcomeText"/>
+    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+</VBox>
+
+        <?import javafx.scene.layout.AnchorPane?>
+
+        <?import javafx.scene.control.TextField?> <?import javafx.scene.control.ScrollPane?>
+
+        <?import javafx.scene.layout.VBox?>
+
+        <?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap_main" fx:controller="com.himanshu.clientapp.Controller"
+
+            prefHeight="96" prefwidth="478"
+
+            xmlns:x="http://javafx.com/fxml">
+
+<children>
+
+    <Button fx:id="button_send" layoutX="404" LayoutY="338" text="Send"/> <TextField fx:id="tf_message" layoutX="30" Layout Y="338"
+
+                                                                                     prefWidth="361" prefHeight="26"/>
+
+    <ScrollPane fx:id="sp_main" layoutY="70" LayoutX="30" prefHeight="256" prefWidth="18" fitToWidth="true">
+
+        <content>
+
+            <VBox fx:id="vbox_messages" prefHeight="248"
+
+                  prefWidth="412"/>
+
+        </content>
+
+    </ScrollPane>
+
+    <Label layoutX="114" LayoutY="26"
+
+           text="WittCode's Messenger">
+
+        <font>
+
+            <Font name="Ariel Rounded MT Bold" size="23"></Font>
+
+        </font>
+
+    </Label>
+
+</children>
+
+</AnchorPane>
